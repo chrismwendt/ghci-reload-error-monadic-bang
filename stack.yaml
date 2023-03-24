@@ -1,0 +1,7 @@
+resolver: nightly-2023-03-15
+extra-deps:
+- github: chrismwendt/monadic-bang
+  commit: e01b8781161b00be810b736f5bae6d460809804f
+system-ghc: true
+skip-ghc-check: true
+allow-newer: true

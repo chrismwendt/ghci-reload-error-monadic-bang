@@ -1,0 +1,25 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           ghci-reload-error-monadic-bang
+version:        0.1.0.0
+author:         Author name here
+maintainer:     example@example.com
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+executable ghci-reload-error-monadic-bang-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_ghci_reload_error_monadic_bang
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -fplugin=MonadicBang -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , monadic-bang
+  default-language: Haskell2010
